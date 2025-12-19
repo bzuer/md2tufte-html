@@ -1,4 +1,4 @@
-# md2html (Astro)
+# md2html
 
 Static site built with Astro and Tufte CSS. The author keeps writing Markdown in `content/` and the site renders it with the same sidenote and footnote syntax.
 
@@ -51,4 +51,3 @@ src/pages/            Astro routes (`index.astro` -> `content/index.md`, `[slug]
 - Assets are served from `/static/` to preserve existing links.
 - Build assets emitted to `/static/_astro` inside `dist`.
 - Images should live in `content/img/` and be referenced as `/static/img/...` in Markdown.
-# md2html
