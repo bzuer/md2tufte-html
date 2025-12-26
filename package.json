@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/build-css.js && astro build",
     "preview": "astro preview --port 1213",
     "start": "astro dev",
     "deploy": "npm run build"

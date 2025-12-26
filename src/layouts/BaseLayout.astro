@@ -2,6 +2,9 @@
 import "katex/dist/katex.min.css";
 
 const { title = "Bruno Cruz" } = Astro.props;
+const cssPath = import.meta.env.DEV
+  ? "/static/css/styles.dev.css"
+  : "/static/css/styles.min.css";
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +12,7 @@ const { title = "Bruno Cruz" } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    <link rel="stylesheet" href="/static/css/styles.min.css" />
+    <link rel="stylesheet" href={cssPath} />
   </head>
   <body>
     <article>

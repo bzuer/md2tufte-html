@@ -15,7 +15,7 @@ Open the URL printed by Astro to preview changes with hot reload.
 
 ```bash
 npm run dev      # development server
-npm run build    # static build to dist/
+npm run build    # generates minified CSS + static build to dist/
 npm run preview  # serve the built site
 ```
 
@@ -50,4 +50,5 @@ src/pages/            Astro routes (`index.astro` -> `content/index.md`, `[slug]
 - The site reads `content/index.md` directly to keep the author workflow intact.
 - Assets are served from `/static/` to preserve existing links.
 - Build assets emitted to `/static/_astro` inside `dist`.
+- `npm run build` regenerates `public/static/css/styles.min.css` from `public/static/css/styles.dev.css`.
 - Images should live in `content/img/` and be referenced as `/static/img/...` in Markdown.
